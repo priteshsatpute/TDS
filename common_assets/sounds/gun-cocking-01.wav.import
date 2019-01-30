@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/gun-cocking-01.wav-aa3dd9c65bcf45138576aeb3566acbae.sample"
+
+[deps]
+
+source_file="res://common_assets/sounds/gun-cocking-01.wav"
+dest_files=[ "res://.import/gun-cocking-01.wav-aa3dd9c65bcf45138576aeb3566acbae.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=true
+compress/mode=0

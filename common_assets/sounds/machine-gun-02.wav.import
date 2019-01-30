@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/machine-gun-02.wav-cade5d92903a376a9577498038bffbea.sample"
+
+[deps]
+
+source_file="res://common_assets/sounds/machine-gun-02.wav"
+dest_files=[ "res://.import/machine-gun-02.wav-cade5d92903a376a9577498038bffbea.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
