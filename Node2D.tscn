@@ -1,11 +1,68 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://icon.png" type="Texture" id=1]
+[ext_resource path="res://Node2D.gd" type="Script" id=1]
+[ext_resource path="res://common_assets/images/grass.png" type="Texture" id=2]
+[ext_resource path="res://models/ammo/bullet_clips/handgun_ammo_clip.tscn" type="PackedScene" id=3]
+[ext_resource path="res://models/ammo/bullet_clips/rifle_ammo_clip.tscn" type="PackedScene" id=4]
+[ext_resource path="res://models/ammo/guns/pistol.tscn" type="PackedScene" id=5]
+[ext_resource path="res://models/ammo/guns/rifle.tscn" type="PackedScene" id=6]
 
-[node name="Node2D" type="Node2D" index="0"]
+[node name="world" type="Node"]
 
-[node name="Sprite" type="Sprite" parent="." index="0"]
+script = ExtResource( 1 )
 
-texture = ExtResource( 1 )
+[node name="bg" type="Sprite" parent="." index="0"]
+
+position = Vector2( 655.447, 441.061 )
+scale = Vector2( 2.02777, 1.36956 )
+texture = ExtResource( 2 )
+
+[node name="bg4" type="Sprite" parent="." index="1"]
+
+position = Vector2( 1930.96, -433.203 )
+scale = Vector2( 2.02777, 1.36956 )
+texture = ExtResource( 2 )
+
+[node name="bg5" type="Sprite" parent="." index="2"]
+
+position = Vector2( 1940.7, 440.135 )
+scale = Vector2( 2.02777, 1.36956 )
+texture = ExtResource( 2 )
+
+[node name="bg2" type="Sprite" parent="." index="3"]
+
+position = Vector2( 655.447, -433.258 )
+scale = Vector2( 2.02777, 1.36956 )
+texture = ExtResource( 2 )
+
+[node name="bg3" type="Sprite" parent="." index="4"]
+
+position = Vector2( -584.424, -430.43 )
+scale = Vector2( 2.02777, 1.36956 )
+texture = ExtResource( 2 )
+
+[node name="bg6" type="Sprite" parent="." index="5"]
+
+position = Vector2( -603.532, 433.06 )
+scale = Vector2( 2.02777, 1.36956 )
+texture = ExtResource( 2 )
+
+[node name="3mm" parent="." index="6" instance=ExtResource( 3 )]
+
+position = Vector2( 539.296, 110.73 )
+
+[node name="7mm" parent="." index="7" instance=ExtResource( 4 )]
+
+position = Vector2( 547.498, 198.904 )
+
+[node name="pistol" parent="." index="8" instance=ExtResource( 5 )]
+
+position = Vector2( 222.918, 90.2503 )
+
+[node name="rifle" parent="." index="9" instance=ExtResource( 6 )]
+
+position = Vector2( 223.821, 186.818 )
+
+[node name="enemies" type="Node2D" parent="." index="10"]
 
 

@@ -1,0 +1,70 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://models/ammo/bullet_clips/RifleBulletsClip.gd" type="Script" id=1]
+[ext_resource path="res://models/ammo/bullet_clips/ammo_clip_full.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10.1282, 4.5323 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="RifleBulletsClip" type="Area2D" parent="." index="0"]
+
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 1 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="RifleBulletsClip" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1.0
+margin_top = 6.0
+margin_right = 147.0
+margin_bottom = 71.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = true
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+bbcode_enabled = false
+bbcode_text = ""
+visible_characters = -1
+percent_visible = 1.0
+meta_underlined = true
+tab_size = 4
+text = ""
+scroll_active = true
+scroll_following = false
+selection_enabled = false
+override_selected_font_color = false
+_sections_unfolded = [ "BBCode" ]
+
+[node name="Sprite" type="Sprite" parent="RifleBulletsClip" index="1"]
+
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RifleBulletsClip" index="2"]
+
+position = Vector2( 1.14622, 0.656044 )
+scale = Vector2( 1.06363, 1.17304 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+[connection signal="body_entered" from="RifleBulletsClip" to="RifleBulletsClip" method="_on_Rifle_body_entered"]
+
+[connection signal="body_exited" from="RifleBulletsClip" to="RifleBulletsClip" method="_on_Rifle_body_exited"]
+
+

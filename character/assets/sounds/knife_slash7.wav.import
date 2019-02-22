@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/knife_slash7.wav-02a2839bb919bcd7fb0f9c5957a6c18b.sample"
+
+[deps]
+
+source_file="res://character/assets/sounds/knife_slash7.wav"
+dest_files=[ "res://.import/knife_slash7.wav-02a2839bb919bcd7fb0f9c5957a6c18b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=true
+edit/loop=false
+compress/mode=0
